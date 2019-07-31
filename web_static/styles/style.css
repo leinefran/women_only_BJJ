@@ -1,0 +1,122 @@
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+body {
+    background-image: url("images/AdobeStock_236051057.jpeg"); /* The image used */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
+    background-color: #cccccc;
+    height: 800px; /* You must set a specified height */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "search search title"
+        "footer footer footer"
+}
+
+.box {
+    /* Center the contents of the grid items. Making each grid item a Flex Container */
+   display: flex;
+
+   /* Horizontal and Vertical centering */
+   justify-content: center;
+   align-items: center;
+   border: 5px;
+   border-radius: 3px;
+   font-size: 2em;
+   font-family: sans-serif;
+   font-weight: bold;
+}
+
+.header {
+    grid-area: header;
+}
+
+.search {
+    grid-area: search;
+}
+
+.title {
+    grid-area: title;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+body h1 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: right;
+}
+
+body h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 60px;
+    font-style: oblique;
+    color: black;
+    text-align: right;
+}
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+
+.site {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for modern browsers:
+--------------------------------------------------------------*/
+
+@supports (grid-area: auto) {
+
+	.site {
+		max-width: none;
+	}
+
+}
