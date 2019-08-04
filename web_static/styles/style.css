@@ -13,7 +13,6 @@ Accessibility
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
@@ -37,26 +36,16 @@ General styling
 --------------------------------------------------------------*/
 
 body {
-    background-image: url("images/AdobeStock_236051057.jpeg"); /* The image used */
+    background-image: url("/web_static/images/WOBJJ-Background.jpg"); /* The image used */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-position: center; /* Center the image */
-    background-color: #cccccc;
-    height: 800px; /* You must set a specified height */
+    /* background-color: #cccccc; */
+    height: 1280px; /* You must set a specified height */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas:
-        "header header header"
-        "search search title"
-        "footer footer footer"
-}
 
 .box {
-    /* Center the contents of the grid items. Making each grid item a Flex Container */
    display: flex;
 
    /* Horizontal and Vertical centering */
@@ -70,19 +59,19 @@ body {
 }
 
 .header {
-    grid-area: header;
+
 }
 
 .search {
-    grid-area: search;
+
 }
 
 .title {
-    grid-area: title;
+
 }
 
 .footer {
-    grid-area: footer;
+
 }
 
 body h1 {
@@ -107,16 +96,4 @@ Basic responsive layout for all browsers:
 .site {
 	max-width: 50em;
 	margin: 0 auto;
-}
-
-/*--------------------------------------------------------------
-CSS Grid layout for modern browsers:
---------------------------------------------------------------*/
-
-@supports (grid-area: auto) {
-
-	.site {
-		max-width: none;
-	}
-
 }
