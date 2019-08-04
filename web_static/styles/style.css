@@ -44,7 +44,6 @@ body {
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-
 .box {
    display: flex;
 
@@ -98,17 +97,18 @@ body {
   float: right;
 }
 
-
 .search {
 
 }
 
-.title {
-
-}
-
 .footer {
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
 
 body h1 {
