@@ -97,8 +97,60 @@ body {
   float: right;
 }
 
-.search {
+header h1 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: right;
+}
 
+header h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 60px;
+    font-style: oblique;
+    color: black;
+    text-align: right;
+}
+
+.body h1 {
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: black;
+    margin-bottom: 70px;
+}
+
+.search-box {
+    height: 100vh;
+    background: white;
+    background-position: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.businees {
+    width: 400px;
+}
+
+.location {
+    width: 200px;
+}
+
+.search-btn {
+    height: 50px;
+    width: 150px;
+    background: #ffeb3b;
+    border: none;
+    color: #000;
+    border-radius: 25px;
+}
+
+.search-btn:hover {
+    background: #ffc107;
+    cursor: pointer;
 }
 
 .footer {
@@ -110,22 +162,6 @@ body {
     color: white;
     text-align: center;
 }
-
-body h1 {
-    font-family: 'Catamaran', sans-serif;
-    font-size: 60px;
-    color: white;
-    text-align: right;
-}
-
-body h2 {
-    font-family: 'Crimson Text', serif;
-    font-size: 60px;
-    font-style: oblique;
-    color: black;
-    text-align: right;
-}
-
 /*--------------------------------------------------------------
 Basic responsive layout for all browsers:
 --------------------------------------------------------------*/
