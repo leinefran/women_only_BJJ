@@ -36,99 +36,84 @@ General styling
 --------------------------------------------------------------*/
 
 body {
-    background-image: url("/web_static/images/WOBJJ-Background.jpg"); /* The image used */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-position: center; /* Center the image */
+    background-color: white;
+    /* background-image: url("/web_static/images/WOBJJ-Background.jpg"); /* The image used */
+    /* background-repeat: no-repeat; /* Do not repeat the image */
+    /* background-position: center; /* Center the image */
     /* background-color: #cccccc; */
-    height: 1280px; /* You must set a specified height */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.box {
-   display: flex;
-
-   /* Horizontal and Vertical centering */
-   justify-content: center;
-   align-items: center;
-   border: 5px;
-   border-radius: 3px;
-   font-size: 2em;
-   font-family: sans-serif;
-   font-weight: bold;
+    /* height: 1280px; */ /* You must set a specified height */
+    /* background-size: cover; /* Resize the background image to cover the entire container */
+    padding: 40px 40px;
 }
 
 .header {
-    overflow: hidden;
-    padding: 20px 10px;
+    overflow: auto;
 }
 
 /* Style the header links */
 .header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Catamaran;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: goldenrod;
+    color: black;
 }
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: dodgerblue;
-  color: white;
+    background-color: lightgray;
+    color: white;
 }
 
 /* Float the link section to the right */
 .header-right {
-  float: right;
+    float: right;
 }
 
-header h1 {
-    font-family: 'Catamaran', sans-serif;
-    font-size: 60px;
-    color: white;
-    text-align: right;
+.form {
+    height: ; 100px;
+    width: 800px;
+    padding: 40px;
+    margin: 40px;
 }
 
-header h2 {
-    font-family: 'Crimson Text', serif;
-    font-size: 60px;
-    font-style: oblique;
-    color: black;
-    text-align: right;
-}
-
-.body h1 {
-    font-family: sans-serif;
-    font-size: 15px;
+.form h1 {
+    font-family: dharma-gothic-e, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
     letter-spacing: 2px;
-    text-align: center;
+    text-align: left;
     color: black;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
 }
 
 .search-box {
-    height: 100vh;
-    background: white;
+    height: ; 100px;
+    width: 800px;
+    background: lightgray;
     background-position: left;
     display: flex;
-    justify-content: flex-start;
+    justify-content: ;
     align-items: center;
     font-family: sans-serif;
+    border-radius: 15px;
 }
 
 .businees {
@@ -142,9 +127,9 @@ header h2 {
 .search-btn {
     height: 50px;
     width: 150px;
-    background: #ffeb3b;
+    background: goldenrod;
     border: none;
-    color: #000;
+    color: black;
     border-radius: 25px;
 }
 
@@ -158,9 +143,12 @@ header h2 {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: slategrey;
     color: white;
     text-align: center;
+    font-family: Catamaran, sans-serif;
+    font-size: 20px;
+    padding: 20px 20px;
 }
 /*--------------------------------------------------------------
 Basic responsive layout for all browsers:
