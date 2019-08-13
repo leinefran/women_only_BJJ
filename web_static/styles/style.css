@@ -86,6 +86,15 @@ body {
     float: right;
 }
 
+hr {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
 .form {
     height: ; 100px;
     width: 800px;
@@ -104,24 +113,40 @@ body {
     /* margin-bottom: 70px; */
 }
 
+.form p {
+    color: #585858;
+}
+
+form hr {
+    margin: 20px;
+}
+
 .search-box {
     height: ; 100px;
-    width: 800px;
-    background: lightgray;
+    width: 450px;
+    background: white;
     background-position: left;
     display: flex;
     justify-content: ;
     align-items: center;
     font-family: sans-serif;
-    border-radius: 15px;
+    border-radius: 25px;
+    padding-right: 20px;
+    border: 20px;
 }
 
-.businees {
-    width: 400px;
+.business {
+    width: 150px;
+    border: 20px;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 .location {
-    width: 200px;
+    width: 150px;
+    padding: 10px;
+    border: 20px;
+    border-radius: 25px;
 }
 
 .search-btn {
@@ -130,7 +155,11 @@ body {
     background: goldenrod;
     border: none;
     color: black;
+    border: 20px;
     border-radius: 25px;
+    padding: 10px;
+    font-family: catamaran, sans-serif;
+    font-size: 15px;
 }
 
 .search-btn:hover {
@@ -143,7 +172,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: slategrey;
+    background-color: lightgrey;
     color: white;
     text-align: center;
     font-family: Catamaran, sans-serif;
