@@ -47,11 +47,18 @@ body {
 }
 
 .header {
+    position: fixed;
+    bottom: 200px;
+    right: 40px;
+    width: 400px;
+}
+
+.nav {
     overflow: auto;
 }
 
 /* Style the header links */
-.header a {
+.nav a {
     float: left;
     color: black;
     text-align: center;
@@ -64,25 +71,25 @@ body {
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
+.nav a.logo {
     font-size: 25px;
     font-weight: bold;
 }
 
 /* Change the background color on mouse-over */
-.header a:hover {
+.nav a:hover {
     background-color: goldenrod;
     color: black;
 }
 
 /* Style the active/current link*/
-.header a.active {
+.nav a.active {
     background-color: lightgray;
     color: white;
 }
 
 /* Float the link section to the right */
-.header-right {
+.nav-right {
     float: right;
 }
 
