@@ -58,7 +58,7 @@ body {
 }
 
 /* Style the header links */
-.nav a {
+a {
     float: left;
     color: black;
     text-align: center;
@@ -77,7 +77,7 @@ body {
 }
 
 /* Change the background color on mouse-over */
-.nav a:hover {
+nav a:hover {
     background-color: goldenrod;
     color: black;
 }
@@ -179,13 +179,38 @@ form hr {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: lightgrey;
+    background-color: lightgray;
     color: white;
     text-align: center;
     font-family: Catamaran, sans-serif;
-    font-size: 20px;
-    padding: 20px 20px;
+    font-size: 18px;
 }
+
+.footer-nav {
+    float: right;
+    margin-right: 40px;
+}
+
+.footer-nav a {
+    color: white;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+.copyright {
+    float: left;
+    display: inline;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+
 /*--------------------------------------------------------------
 Basic responsive layout for all browsers:
 --------------------------------------------------------------*/
