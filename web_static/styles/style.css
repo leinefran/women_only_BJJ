@@ -37,20 +37,24 @@ General styling
 
 body {
     background-color: white;
-    /* background-image: url("/web_static/images/WOBJJ-Background.jpg"); /* The image used */
-    /* background-repeat: no-repeat; /* Do not repeat the image */
-    /* background-position: center; /* Center the image */
-    /* background-color: #cccccc; */
-    /* height: 1280px; */ /* You must set a specified height */
-    /* background-size: cover; /* Resize the background image to cover the entire container */
     padding: 40px 40px;
 }
 
-.header {
-    position: fixed;
-    bottom: 200px;
-    right: 40px;
-    width: 400px;
+.header h1 {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 160px;
+    font-weight: 900px;
+    font-family: dharma-gothic-e, sans-serif;
+    font-style: normal;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    right: 0;
+    /* background-image: url('web_static/images/Altered_Background.jpg'); */
+    -webkit-background-clip: text;
+
+
 }
 
 .nav {
@@ -91,15 +95,6 @@ nav a:hover {
 /* Float the link section to the right */
 .nav-right {
     float: right;
-}
-
-hr {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
 }
 
 .form {
