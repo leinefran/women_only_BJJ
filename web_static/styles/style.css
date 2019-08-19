@@ -1,3 +1,20 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+html,
+body,
+div{
+    margin: 0;
+    padding: 0;
+}
+
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/
@@ -40,6 +57,19 @@ body {
     padding: 40px 40px;
 }
 
+.container {
+    display: grid;
+    width: 100%;
+    /* margin: 0 auto; /* place the layout in the middle of the page */
+    grid-template-areas:
+        "nav nav"
+        "break-line break-line"
+        "main header
+        "footer footer";
+    grid-template-rows: ;
+    grid-template-columns: ;
+}
+
 .header h1 {
     text-transform: uppercase;
     text-align: right;
@@ -48,17 +78,12 @@ body {
     font-family: dharma-gothic-e, sans-serif;
     font-style: normal;
     color: black;
-    margin: 0px;
-    padding: 0px;
-    right: 0;
     /* background-image: url('web_static/images/Altered_Background.jpg'); */
     -webkit-background-clip: text;
-
-
 }
 
 .nav {
-    overflow: auto;
+
 }
 
 /* Style the header links */
