@@ -1,24 +1,8 @@
-/* =Reset
--------------------------------------------------------------- */
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-top: 0;
-}
-
-html,
-body,
-div{
-    margin: 0;
-    padding: 0;
-}
-
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers */
+
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -57,19 +41,6 @@ body {
     padding: 40px 40px;
 }
 
-.container {
-    display: grid;
-    width: 100%;
-    /* margin: 0 auto; /* place the layout in the middle of the page */
-    grid-template-areas:
-        "nav nav"
-        "break-line break-line"
-        "main header
-        "footer footer";
-    grid-template-rows: ;
-    grid-template-columns: ;
-}
-
 .header h1 {
     text-transform: uppercase;
     text-align: right;
@@ -78,12 +49,17 @@ body {
     font-family: dharma-gothic-e, sans-serif;
     font-style: normal;
     color: black;
+    margin: 0px;
+    padding: 0px;
+    right: 0;
     /* background-image: url('web_static/images/Altered_Background.jpg'); */
     -webkit-background-clip: text;
+
+
 }
 
 .nav {
-
+    overflow: auto;
 }
 
 /* Style the header links */
@@ -163,14 +139,14 @@ form hr {
 }
 
 .business {
-    width: 150px;
+    /* width: 150px;
     border: 20px;
-    padding: 10px;
+    padding: 10px; */
     border-radius: 25px;
 }
 
 .location {
-    width: 150px;
+    /* width: 150px; */
     padding: 10px;
     border: 20px;
     border-radius: 25px;
@@ -179,12 +155,12 @@ form hr {
 .search-btn {
     height: 50px;
     width: 150px;
+    padding: 10px; */
     background: goldenrod;
     border: none;
     color: black;
     border: 20px;
     border-radius: 25px;
-    padding: 10px;
     font-family: catamaran, sans-serif;
     font-size: 15px;
 }
