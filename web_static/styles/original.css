@@ -1,0 +1,202 @@
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+body {
+    background-color: white;
+    padding: 40px 40px;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 160px;
+    font-weight: 900px;
+    font-family: dharma-gothic-e, sans-serif;
+    font-style: normal;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    right: 0;
+    /* background-image: url('web_static/images/Altered_Background.jpg'); */
+    -webkit-background-clip: text;
+
+
+}
+
+.nav {
+    overflow: auto;
+}
+
+/* Style the header links */
+a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Catamaran;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.nav a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+nav a:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+/* Style the active/current link*/
+.nav a.active {
+    background-color: lightgray;
+    color: white;
+}
+
+/* Float the link section to the right */
+.nav-right {
+    float: right;
+}
+
+.form {
+    height: ; 100px;
+    width: 800px;
+    padding: 40px;
+    margin: 40px;
+}
+
+.form h1 {
+    font-family: dharma-gothic-e, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: black;
+    /* margin-bottom: 70px; */
+}
+
+.form p {
+    color: #585858;
+}
+
+form hr {
+    margin: 20px;
+}
+
+.search-box {
+    height: ; 100px;
+    width: 450px;
+    background: white;
+    background-position: left;
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 25px;
+    padding-right: 20px;
+    border: 20px;
+}
+
+.business {
+    /* width: 150px;
+    border: 20px;
+    padding: 10px; */
+    border-radius: 25px;
+}
+
+.location {
+    /* width: 150px; */
+    padding: 10px;
+    border: 20px;
+    border-radius: 25px;
+}
+
+.search-btn {
+    height: 50px;
+    width: 150px;
+    padding: 10px; */
+    background: goldenrod;
+    border: none;
+    color: black;
+    border: 20px;
+    border-radius: 25px;
+    font-family: catamaran, sans-serif;
+    font-size: 15px;
+}
+
+.search-btn:hover {
+    background: #ffc107;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    font-family: Catamaran, sans-serif;
+    font-size: 18px;
+}
+
+.footer-nav {
+    float: right;
+    margin-right: 40px;
+}
+
+.footer-nav a {
+    color: white;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+.copyright {
+    float: left;
+    display: inline;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+
+.site {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
