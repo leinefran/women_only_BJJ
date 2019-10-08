@@ -6,68 +6,29 @@ Accessibility
 
 
 /*--------------------------------------------------------------
-CSS GRID
+General styling
 --------------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
 
-body {
-    background-color: white;
-    padding: 40px 40px;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 .container{
-    display: grid;
+    display: ;
     width: 100%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: minmax(100px, auto);
-    grid-template-areas:
-        "nav nav"
-        "main header"
-        "footer footer"
 }
-
-.nav {
-    grid-area: nav;
-}
-
-.main {
-    grid-area: main;
-}
-
-.header {
-    grid-area: header;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-/*--------------------------------------------------------------
-General styling
---------------------------------------------------------------*/
 
 body {
     background-color: white;
     padding: 40px 40px;
 }
 
-.header h1 {
-    text-transform: uppercase;
-    text-align: right;
-    font-size: 160px;
-    font-weight: 900px;
-    font-family: dharma-gothic-e, sans-serif;
-    font-style: normal;
-    color: black;
-    margin: 0px;
-    padding: 0px;
-    right: 0;
-    /* background-image: url('web_static/images/Altered_Background.jpg'); */
-    -webkit-background-clip: text;
-
-
-}
-
-.nav {
+nav {
     overflow: auto;
 }
 
@@ -85,7 +46,7 @@ a {
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.nav a.logo {
+nav a.logo {
     font-size: 25px;
     font-weight: bold;
 }
@@ -97,7 +58,7 @@ nav a:hover {
 }
 
 /* Style the active/current link*/
-.nav a.active {
+nav a.active {
     background-color: lightgray;
     color: white;
 }
@@ -107,9 +68,34 @@ nav a:hover {
     float: right;
 }
 
+section {
+    display: inline-block;
+    width: 1fr;
+    box-sizing: border-box;
+}
+
+section h1 {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 160px;
+    font-family: dharma-gothic-e, sans-serif;
+    font-style: normal;
+    color: black;
+
+    margin: 0px;
+    padding: 0px;
+    right: 0;
+    /*  */
+    -webkit-background-clip: text;
+}
+
+.img {
+    background-image: url('web_static/images/black&white-wobjj-background.jpg');
+}
+
 .form {
     height: ; 100px;
-    width: 800px;
+    width: 1fr;
     padding: 40px;
     margin: 40px;
 }
@@ -122,7 +108,7 @@ nav a:hover {
     letter-spacing: 2px;
     text-align: left;
     color: black;
-    /* margin-bottom: 70px; */
+    margin-bottom: 70px;
 }
 
 .form p {
@@ -147,15 +133,15 @@ form hr {
     border: 20px;
 }
 
-.business {
-    /* width: 150px;
+.search-field-business {
+    width: 150px;
     border: 20px;
-    padding: 10px; */
+    padding: 10px;
     border-radius: 25px;
 }
 
-.location {
-    /* width: 150px; */
+.search-field-location {
+    width: 150px;
     padding: 10px;
     border: 20px;
     border-radius: 25px;
