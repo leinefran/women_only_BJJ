@@ -68,6 +68,7 @@ section {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    align-content: space-evenly;
 }
 
 .box1 {
