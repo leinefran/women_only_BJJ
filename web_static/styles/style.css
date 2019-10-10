@@ -24,7 +24,7 @@ body {
     width: 100%;
 }
 
-nav {
+.nav {
     overflow: auto;
 }
 
@@ -42,40 +42,45 @@ a {
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-nav a.logo {
+.nav a.logo {
     font-size: 20px;
     font-weight: bold;
 }
 
 /* Change the background color on mouse-over */
-nav a:hover {
+.nav a:hover {
     background-color: goldenrod;
     color: black;
 }
 
 /* Style the active/current link*/
-nav a.active {
+.nav a.active {
     background-color: lightgray;
     color: white;
 }
 
 /* Float the link section to the right */
-nav-right {
+.nav-right {
     float: right;
 }
 
 section {
-    /* display: inline-block; */
+    display: flex;
+    flex-direction: row;
     box-sizing: border-box;
 }
 
-img {
-    background-position: right;
+.box1 {
+    justify-content: flex-end;
 }
 
 form {
     padding: 40px;
     margin: 40px;
+}
+
+.box2 {
+    justify-content: flex-start;
 }
 
 form h1 {
@@ -143,7 +148,7 @@ form hr {
     cursor: pointer;
 }
 
-.footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
