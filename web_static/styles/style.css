@@ -18,14 +18,10 @@ html {
     box-sizing: inherit;
 }
 
-.container{
-    display: ;
-    width: 100%;
-}
-
 body {
     background-color: white;
     padding: 40px 40px;
+    width: 100%;
 }
 
 nav {
@@ -47,7 +43,7 @@ a {
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 nav a.logo {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -64,28 +60,25 @@ nav a.active {
 }
 
 /* Float the link section to the right */
-.nav-right {
+nav-right {
     float: right;
 }
 
 section {
-    display: inline-block;
-    width: 1fr;
+    /* display: inline-block; */
     box-sizing: border-box;
 }
 
-.img {
-    background-image: url('web_static/images/black&white-wobjj-background.jpg');
+img {
+    background-position: right;
 }
 
-.form {
-    height: ; 100px;
-    width: 1fr;
+form {
     padding: 40px;
     margin: 40px;
 }
 
-.form h1 {
+form h1 {
     font-family: dharma-gothic-e, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -96,7 +89,7 @@ section {
     margin-bottom: 70px;
 }
 
-.form p {
+form p {
     color: #585858;
 }
 
