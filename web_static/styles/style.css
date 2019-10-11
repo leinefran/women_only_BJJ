@@ -128,11 +128,10 @@ form hr {
 .search-btn {
     height: 50px;
     width: 150px;
-    padding: 10px; */
+    padding: 10px;
     background: goldenrod;
-    border: none;
     color: black;
-    border: 20px;
+    border: none;
     border-radius: 25px;
     font-family: catamaran, sans-serif;
     font-size: 15px;
