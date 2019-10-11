@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: white;
-    padding: 40px 40px;
+    padding: 20px 20px;
     width: 100%;
 }
 
@@ -73,23 +73,25 @@ section {
     flex-wrap: wrap;
 }
 
-.box1 {
+.box1-image {
     align-self: flex-start;
+    margin-top: 40px;
  }
 
 form {
     padding-top: 10px;
     padding-bottom: 40px;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
-.box2 {
-    align-self: flex-end;
-    background-color: aquamarine !important;
+.box2-text-form-combo {
+    align-self: flex-start;
+    /* background-color: aquamarine !important; */
+    margin-top: 40px;
  }
 
-.box2 h1 {
+.box2-text-form-combo h1 {
     font-family: dharma-gothic-e, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -97,11 +99,13 @@ form {
     letter-spacing: 2px;
     text-align: left;
     color: black;
-    margin-bottom: 70px;
+    margin: 2px;
+    margin-bottom: 40px;
 }
 
 form p {
     color: #585858;
+    margin-right: 30px;
 }
 
 form hr {
@@ -110,33 +114,34 @@ form hr {
 
 .box3-search {
     height: 100px;
-    width: 1000px;
-    background: white;
-    background-position: left;
+    /* background: white;  */
     display: flex;
     align-items: center;
     font-family: sans-serif;
-    background-color: beige !important;
+    /* background-color: beige !important; */
+    padding-top: 40px;
+    margin-top: 95px;
 }
 
 .search-field-business {
-    /* border-radius: 25px; */
+    border: none;
 }
 
 .search-field-location {
-    border-radius: 10px;
+    border: none;
+    margin-right: 20px;
 }
 
 .search-btn {
     height: 50px;
-    width: 150px;
-    padding: 10px;
+    width: 100px;
     background: goldenrod;
     color: black;
     border: none;
     border-radius: 25px;
     font-family: catamaran, sans-serif;
     font-size: 15px;
+    text-align: center;
 }
 
 .search-btn:hover {
@@ -149,6 +154,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 65px;
     background-color: lightgray;
     color: white;
     text-align: center;
@@ -163,6 +169,7 @@ footer {
 
 .footer-nav a {
     color: white;
+    float: none;
 }
 
 .footer-nav li {
@@ -172,12 +179,9 @@ footer {
 .copyright {
     float: left;
     display: inline;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 18px;
+    padding: 5px;
     line-height: 25px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 
