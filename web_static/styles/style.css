@@ -78,8 +78,10 @@ section {
  }
 
 form {
-    padding: 40px;
-    margin: 40px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .box2 {
@@ -118,7 +120,7 @@ form hr {
 }
 
 .search-field-business {
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
 .search-field-location {
