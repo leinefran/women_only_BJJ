@@ -64,7 +64,7 @@ a {
     float: right;
 }
 
-section {
+main {
     display: flex;
     flex-direction: row-reverse;
     box-sizing: border-box;
