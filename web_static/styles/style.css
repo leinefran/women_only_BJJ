@@ -361,6 +361,9 @@ General styling - This is the beginning of my code, after CSS reset.
 --------------------------------------------------------------*/
 html {
     box-sizing: border-box;
+    line-height: 1.15;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 *,
@@ -373,10 +376,18 @@ body {
     background-color: white;
     padding: 20px 20px;
     width: 100%;
+    display: block;
+    margin-right: auto; /* evenly distribute the margins the right side */
+    margin-left: auto; /* evenly distribute the margins the left side */
 }
 
 .nav {
-    overflow: auto;
+    overflow: hidden;
+    z-index: 10; /* The z-index CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one. */
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: white;
 }
 
 /* Style the header links */
@@ -392,6 +403,24 @@ a {
     font-family: Catamaran;
 }
 
+a:link {
+  color: #090909;
+  text-decoration: none;
+}
+
+a:visited {
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: lightgray;
+}
+
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .nav a.logo {
     font-size: 20px;
@@ -405,7 +434,7 @@ a {
 }
 
 /* Style the active/current link*/
-.nav a.active {
+.nav a:active {
     background-color: lightgray;
     color: white;
 }
@@ -566,4 +595,10 @@ Basic responsive layout for all browsers:
   .header-right {
     float: none;
   }
+}
+
+@media (min-width: 1024px) {
+    .nav {
+        height: auto;
+    }
 }
