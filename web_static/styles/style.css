@@ -374,7 +374,7 @@ html {
 
 body {
     background-color: black;
-    padding: 20px 20px;
+    padding: 40px 40px;
     width: 100%;
     display: block;
     margin-right: auto; /* evenly distribute the margins the right side */
@@ -445,18 +445,42 @@ a:active {
 }
 
 main {
-    display: flex;
+    /* display: flex;
     flex-direction: row-reverse;
     box-sizing: border-box;
     align-content: space-around;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
-.box1-image {
-    align-self: flex-start;
-    margin-top: 40px;
+.box-1-title {
+    width: 1200px;
+    height: 8460px;
+    z-index: 9;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+.women p, .only p, .bjj p{
+    /* line-height: 200px; */
+    font-size: 250px;
  }
+
+.women span, .only span, .bjj span{
+    font-family: dharma-gothic-c, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #fff;
+    letter-spacing: 1px;
+ }
+
+.bjj p {
+
+}
+
+.bjj span {
+
+}
 
 img {
     max-width: 100%; /* making img responsive: the image is never wider than its container */
@@ -464,25 +488,21 @@ img {
 }
 
 form {
-    padding-top: 10px;
-    padding-bottom: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
 }
 
-.box2-text-form-combo {
-    align-self: flex-start;
-    /* background-color: aquamarine !important; */
-    margin-top: 40px;
+.box2 {
+    /* align-self: flex-start;
+    margin-top: 40px; */
  }
 
-.box2-text-form-combo h1 {
+.box2 p {
     font-family: dharma-gothic-e, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 50px;
     letter-spacing: 2px;
-    text-align: left;
+    /* text-align: left; */
     color: white;
     margin: 2px;
     margin-bottom: 40px;
@@ -500,13 +520,12 @@ form hr {
 }
 
 .box3-search {
-    height: 100px;
+    /* height: 100px;
     display: flex;
     align-items: center;
     font-family: sans-serif;
-    /* background-color: beige !important; */
     padding-top: 40px;
-    margin-top: 95px;
+    margin-top: 95px; */
 }
 
 .search-field-business {
