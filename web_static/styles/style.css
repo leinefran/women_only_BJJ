@@ -457,9 +457,9 @@ main {
     width: 100%;
     height: 100%;
     z-index: 9;
-    background-color: rgb(0, 0, 0);
-    border-color: rgb(255, 255, 255);
-    padding: 0px 20px 0.5px 40px;
+    background-color: rgb(255, 255, 0);
+    /* border-color: rgb(255, 255, 255); */
+    padding: 10px 20px 10px 40px;
 }
 
 .box-1-title h1 {
@@ -468,7 +468,7 @@ main {
     font-family: acumin-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
-    color: #fff;
+    color: #000;
     letter-spacing: 0.5px;
  }
 
@@ -477,13 +477,15 @@ img {
     height: auto; /* making img responsive: this line makes the image keeps its original aspect ratio */
 }
 
-form {
-
-}
-
 .box2 {
     /* align-self: flex-start;
     margin-top: 40px; */
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+    padding: 10px 20px 10px 40px;
  }
 
 .box2 p {
@@ -509,12 +511,20 @@ form hr {
     size: "50";
 }
 
+.box-3-form {
+    width: 100%;
+    height: 800px;
+    z-index: 7;
+    background-color: #fff;
+    padding: 10px 20px 10px 40px;
+}
+
 .box3-search {
-    /* height: 100px;
+    /* height: 100%; */
     display: flex;
     align-items: center;
     font-family: sans-serif;
-    padding-top: 40px;
+    /* padding-top: 40px;
     margin-top: 95px; */
 }
 
@@ -528,7 +538,7 @@ form hr {
 }
 
 .search-btn {
-    height: 150%;
+    /* height: 150%; */
     width: 100px;
     background: goldenrod;
     color: black;
@@ -550,8 +560,8 @@ footer {
     bottom: 0;
     width: 100%;
     height: 10%;
-    background-color: lightgray;
-    color: white;
+    background-color: #fff;
+    color: black;
     text-align: center;
     font-family: Catamaran, sans-serif;
     font-size: 18px;
@@ -563,7 +573,6 @@ footer {
 }
 
 .footer-nav a {
-    color: white;
     float: none;
 }
 
