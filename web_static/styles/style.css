@@ -461,15 +461,14 @@ main {
 /* ************ h1 TITLE ************ */
 
 .box-1-title {
-    width: 100%;
-    height: 100%;
+    width: 50%;
     background-color: rgb(255, 255, 0);
-    padding: 10px 20px 10px 40px;
+    padding: 0px 40px 0px 40px;
 }
 
 .box-1-title h1 {
-    line-height: 200px;
-    font-size: 250px;
+    line-height: 170px;
+    font-size: 200px;
     font-family: acumin-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -477,66 +476,56 @@ main {
     letter-spacing: 0.5px;
  }
 
-img {
-    max-width: 100%; /* making img responsive: the image is never wider than its container */
-    height: auto; /* making img responsive: this line makes the image keeps its original aspect ratio */
-}
 
 /* ************ h2 TITLE ************ */
 
 .box2 {
-    align-self: flex-start;
-    margin-top: 40px;
-    width: 100%;
-    height: 100%;
-    z-index: 8;
+    width: 50%;
     background-color: rgb(0, 0, 0);
-    border-color: rgb(255, 255, 255);
-    padding: 10px 20px 10px 40px;
+    padding: 150px 40px 10px 40px;
  }
 
-.box2 p {
-    font-family: dharma-gothic-e, sans-serif;
+.box2 h2 {
+    font-family: acumin-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 50px;
     letter-spacing: 2px;
+    line-height: 100px;
     text-align: left;
     color: white;
     margin: 2px;
     margin-bottom: 40px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: sans-serif;
+    padding: 40px 20px 40px 40px;
+    background-color: #fff;
+}
+
 form p {
     color: #585858;
-    margin-right: 30px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    margin-right: 40px;
 }
 
-form hr {
-    margin: 20px;
-    width: "1";
-    size: "50";
-}
-
-.box-3-form {
-    width: 100%;
-    height: 800px;
-    z-index: 7;
-    background-color: #fff;
-    padding: 10px 20px 10px 40px;
-}
-
-.box3-search {
-    height: 100%;
+.search-wrapper {
     display: flex;
-    align-items: center;
-    font-family: sans-serif;
-    padding-top: 40px;
-    margin-top: 95px;
 }
 
 .search-field-business {
     border: none;
+}
+
+.location-wrapper {
+    display: flex;
 }
 
 .search-field-location {
@@ -545,15 +534,18 @@ form hr {
 }
 
 .search-btn {
-    height: 150%;
+    height: auto;
     width: 100px;
     background: goldenrod;
     color: black;
     border: none;
     border-radius: 25px;
-    font-family: catamaran, sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-size: 15px;
     text-align: center;
+    margin-top: 40px;
+    align-self: flex-end;
+    padding: 10px;
 }
 
 .search-btn:hover {
