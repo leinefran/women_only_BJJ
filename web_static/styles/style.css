@@ -505,6 +505,7 @@ form {
     font-family: sans-serif;
     padding: 40px 20px 40px 40px;
     background-color: #fff;
+    border-radius: 25px;
 }
 
 input {
@@ -514,6 +515,7 @@ input {
     font-style: normal;
     font-size: 20px;
     padding-left: 30px;
+    width: 100%;
 }
 
 .search-wrapper {
