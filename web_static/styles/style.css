@@ -521,6 +521,12 @@ input {
     width: 100%;
 }
 
+/* Add a border to the input field when it gets focus */
+input[type=text]:focus {
+    border: 3px solid #555;
+    border-radius: 20px;
+}
+
 .search-wrapper {
     display: flex;
 }
