@@ -542,7 +542,6 @@ input[type=text]:focus {
 
 .search-field-location {
     border: none;
-    /* margin-right: 20px; */
     padding-left: 45px;
 }
 
