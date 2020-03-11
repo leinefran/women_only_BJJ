@@ -359,6 +359,7 @@ Accessibility
 /*--------------------------------------------------------------
 General styling - This is the beginning of my code, after CSS reset.
 --------------------------------------------------------------*/
+
 html {
     box-sizing: border-box;
     line-height: 1;
@@ -374,14 +375,19 @@ html {
 body {
     background-color: white;
     width: 100%;
-    display: block;
     font-family: acumin-pro, sans-serif;
     font-style: normal;
     font-size: 25px;
     font-weight: 100;
 }
 
-/* ************ NAV ************ */
+/*
+ *
+ *
+ nav
+ *
+ *
+ */
 
 .nav {
     overflow: hidden;
@@ -393,7 +399,13 @@ body {
     padding-right: 20px;
 }
 
-/* Style the header links */
+/*
+ *
+ *
+ header links
+ *
+ *
+ */
 
 a {
     float: left;
@@ -450,9 +462,15 @@ hr {
     padding: 0;
 }
 
-/* ************ MAIN ************ */
+/*
+ *
+ *
+ main
+ *
+ *
+ */
 
-main {
+.container {
     display: flex;
     flex-direction: row-reverse;
     box-sizing: border-box;
@@ -470,13 +488,13 @@ main {
 }
 
 .box-1-title h1 {
-    line-height: 170px;
-    font-size: 200px;
+    line-height: 100px;
+    font-size: 90px;
     font-family: acumin-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
     color: #000;
-    letter-spacing: 0.5px;
+    /*letter-spacing: 0.5px;*/
  }
 
 
@@ -523,7 +541,7 @@ input {
 
 /* Add a border to the input field when it gets focus */
 input[type=text]:focus {
-    border: 3px solid #555;
+    border: 3px solid #D3D3D3;
     border-radius: 20px;
 }
 
@@ -567,7 +585,13 @@ input[type=text]:focus {
     cursor: pointer;
 }
 
-/* ************ FOOTER ************ */
+/*
+ *
+ *
+ footer
+ *
+ *
+ */
 
 footer {
     width: 100%;
@@ -599,47 +623,30 @@ footer {
     clear: left;
 }
 
-
-
-/* .copyright {
+.copyright {
     float: left;
     display: inline;
     padding: 5px;
     line-height: 25px;
     margin-left: 25px;
-} */
-
-
-/*--------------------------------------------------------------
-Basic responsive layout for all browsers:
---------------------------------------------------------------*/
-
-.site {
-	max-width: 50em;
-	margin: 0 auto;
 }
 
-/* Media query for mobile devices */
-
-@-ms-viewport{
-  width: device-width;
-}
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 
-  .header-right {
-    float: none;
-  }
-}
+    .header-right {
+        float: none;
+    }
 
-@media (min-width: 1024px) {
-    .nav {
-        height: auto;
+    .container {
+        display: flex;
+
     }
 }
+
