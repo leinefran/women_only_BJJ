@@ -676,6 +676,10 @@ footer p {
         cursor: pointer;
     }
 
+    footer {
+        height: auto;
+    }
+
     .footer-container {
         display: flex;
         flex-direction: column;
