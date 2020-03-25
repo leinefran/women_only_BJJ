@@ -416,24 +416,6 @@ a {
     line-height: 25px;
 }
 
-a:link {
-  color: #090909;
-  text-decoration: none;
-}
-
-a:visited {
-  font-style: italic;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  background-color: lightgray;
-}
-
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 
 .nav a.logo {
@@ -445,6 +427,7 @@ a:active {
 .nav a:hover {
     background-color: #FFFF00;
     color: black;
+    text-decoration: none;
 }
 
 /* Style the active/current link*/
@@ -597,38 +580,33 @@ footer {
     background-color: #fff;
     color: black;
     font-size: 20px;
+    padding: 0 40px 0px 40px;
+    height: 100px;
 }
 
-.footer-nav {
-    float: right;
-    margin-right: 40px;
+footer p {
+    padding-top: 5px;
+    color: lightgray;
 }
 
-.footer-nav p {
-    padding-left: 15px;
-    font-weight: bold;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.footer-nav li {
-    display: block;
-    float: left;
-    clear: left;
+/* Change the background color on mouse-over */
+.inner-flex a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
 }
 
-.references li {
-    display: block;
-    float: left;
-    clear: left;
+/* Style the active/current link*/
+.inner-flex a:active {
+    background-color: lightgray;
+    color: white;
 }
-
-.copyright {
-    float: left;
-    display: inline;
-    padding: 5px;
-    line-height: 25px;
-    margin-left: 25px;
-}
-
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
@@ -648,22 +626,17 @@ footer {
         padding-left: 5px;
     }
 
-    a:link {
-        color: #090909;
+    /* Change the background color on mouse-over */
+    .nav a:hover {
+        background-color: #FFFF00;
+        color: black;
         text-decoration: none;
     }
 
-    a:visited {
-        font-style: italic;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    a:active {
+    /* Style the active/current link*/
+    .nav a:active {
         background-color: lightgray;
+        color: white;
     }
 
     .container {
@@ -703,21 +676,17 @@ footer {
         cursor: pointer;
     }
 
-    footer p {
-        padding-left: 40px;
+    .footer-container {
+        display: flex;
+        flex-direction: column;
     }
 
-    .footer-nav li a {
-        padding: 0px 10px 5px 10px;
-        margin: 0;
-        /* float: left; */
+    .inner-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .references li a, .copyright {
-        padding: 0px 10px 5px 10px;
-        margin: 0;
-        float: left;
-    }
 }
 
 
