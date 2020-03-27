@@ -472,7 +472,7 @@ hr {
 
 .box-1-WOBJJ h1 {
     line-height: 100px;
-    font-size: 90px;
+    font-size: 8vw;
     font-family: acumin-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -609,7 +609,7 @@ footer p {
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
     .header a {
         float: none;
